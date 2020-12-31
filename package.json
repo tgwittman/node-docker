@@ -1,0 +1,41 @@
+{
+  "name": "node-docker",
+  "version": "0.0.0",
+  "description": "Dockerized Node Application",
+  "main": "src/server.js",
+  "scripts": {
+    "docker:build": "./docker-build.sh",
+    "docker:run": "./docker-run.sh",
+    "start": "node src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgwittman/node-docker.git"
+  },
+  "keywords": [
+    "nodejs",
+    "docker"
+  ],
+  "author": "tgwittman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgwittman/node-docker/issues"
+  },
+  "homepage": "https://github.com/tgwittman/node-docker#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.6.3",
+    "superagent": "^6.1.0",
+    "supertest": "^6.0.1"
+  }
+}

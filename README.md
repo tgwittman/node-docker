@@ -1,2 +1,2 @@
 # node-docker
-Dockerizing a Node Application
+Dockerized Node Application
