@@ -1,8 +1,8 @@
 # node-docker
-<img src="https://github.com/tgwittman/node-docker/workflows/Deploy/badge.svg"/>
-<img src="https://github.com/tgwittman/node-docker/workflows/Test/badge.svg"/>
+<img src="https://github.com/tgwittman/node-docker-ecs/workflows/Deploy/badge.svg"/>
+<img src="https://github.com/tgwittman/node-docker-ecs/workflows/Test/badge.svg"/>
 
-Dockerized Node Application
+Dockerized Node Application for Amazon Elastic Container Service (ECS)
 
 ### Getting Started
 1. `npm ci`
@@ -13,5 +13,5 @@ Dockerized Node Application
 1. `npm run docker:build`
 2. `npm run docker:run`
    
-### ECS Deployment
-1. Follow the [Setup](https://github.com/tgwittman/node-docker/blob/master/SETUP.md) documentation.
+### Setup Amazon Elastic Container Registry (ECR) and Elastic Container Service (ECS)
+1. Follow the [Setup](https://github.com/tgwittman/node-docker-ecs/blob/master/SETUP.md) documentation.
