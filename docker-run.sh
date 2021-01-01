@@ -1,16 +1,20 @@
-docker run -p 4916:8080 -d "$USER"/node-docker
+docker run -p 80:80 -d "$USER"/node-docker
 
-# Get container ID
+# Get all active containers
 # docker ps
 
-# Print app output
+# Print container output
 # docker logs <container id>
 
 # Enter the container
 # docker exec -it <container id> /bin/bash
 
-# Now you can call your app using curl
-# curl -i localhost:4916
+# Call container using curl
+# curl -i localhost:80
+# curl -i localhost:80/owner
 
-# Kill docker container
-# docker kill <container id>
+# Stop docker container
+# docker stop <container id>
+
+# Remove docker container
+# docker rm <container id>

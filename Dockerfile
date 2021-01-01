@@ -1,6 +1,6 @@
 FROM node:12
 
-WORKDIR /usr/src/server
+WORKDIR /usr/app
 
 COPY package*.json ./
 
@@ -8,6 +8,6 @@ RUN npm ci --only=production
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD [ "node", "src/server.js" ]
