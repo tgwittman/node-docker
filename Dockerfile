@@ -8,6 +8,8 @@ RUN npm ci --only=production
 
 COPY . .
 
+RUN npm run build
+
 EXPOSE 80
 
-CMD [ "node", "src/server.js" ]
+CMD [ "npm", "start" ]

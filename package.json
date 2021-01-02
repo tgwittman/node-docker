@@ -6,7 +6,9 @@
   "scripts": {
     "docker:build": "./docker-build.sh",
     "docker:run": "./docker-run.sh",
-    "start": "node src/server.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 80",
     "test": "jest"
   },
   "repository": {
@@ -15,6 +17,7 @@
   },
   "keywords": [
     "nodejs",
+    "nextjs",
     "docker"
   ],
   "author": "tgwittman",
@@ -24,18 +27,17 @@
   },
   "homepage": "https://github.com/tgwittman/node-docker#readme",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "date-fns": "^2.16.1",
+    "gray-matter": "^4.0.2",
+    "next": "^10.0.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "jest": "^26.6.3",
-    "superagent": "^6.1.0",
-    "supertest": "^6.0.1"
+    "jest-config": "^26.6.3",
+    "react-test-renderer": "^17.0.1"
   }
 }

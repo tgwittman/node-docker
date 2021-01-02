@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date component renders correctly 1`] = `
+<time
+  dateTime="2021-01-01"
+>
+  January 1, 2021
+</time>
+`;
