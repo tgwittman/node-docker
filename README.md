@@ -1,8 +1,8 @@
-# node-docker
+# node-docker-ecs
 <img src="https://github.com/tgwittman/node-docker-ecs/workflows/Deploy/badge.svg"/>
 <img src="https://github.com/tgwittman/node-docker-ecs/workflows/Test/badge.svg"/>
 
-Dockerized Node Application for Amazon Elastic Container Service (ECS)
+Dockerized Node Application with Next.js for Amazon Elastic Container Service (ECS)
 
 ### Getting Started
 1. `npm ci`
