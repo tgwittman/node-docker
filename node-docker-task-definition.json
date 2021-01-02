@@ -15,7 +15,7 @@
     }
   ],
   "memory": "512",
-  "family": "node-docker",
+  "family": "node-docker-task-definition",
   "requiresCompatibilities": [
     "FARGATE"
   ],
