@@ -4,8 +4,8 @@ import styles from '../styles/layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Timothy'
-export const siteTitle = 'node-docker-ecs'
+const name = 'Timothy\'s Blog'
+export const siteTitle = 'Timothy\'s Blog'
 
 export default function Layout({ children, home }) {
     return (
