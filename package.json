@@ -4,10 +4,10 @@
   "description": "Dockerized Node Application",
   "main": "src/server.js",
   "scripts": {
-    "docker:build": "./docker-build.sh",
-    "docker:run": "./docker-run.sh",
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
+    "docker-build": "./docker-build.sh",
+    "docker-run": "./docker-run.sh",
     "start": "next start -p 80",
     "test": "jest"
   },

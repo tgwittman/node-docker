@@ -1,4 +1,7 @@
-docker build -t "$USER"/node-docker .
+docker build -t "$USER"/node-docker-ecs .
 
-# Your image will now be listed by Docker
+# Image will now be listed by docker
 # docker images
+
+# Remove docker image
+# docker image rm <image id>
