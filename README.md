@@ -15,3 +15,4 @@ Dockerized Node Application with Next.js for Amazon Elastic Container Service (E
    
 ### Setup Amazon Elastic Container Registry (ECR) and Elastic Container Service (ECS)
 1. Follow the [setup documentation](https://github.com/tgwittman/node-docker-ecs/blob/master/SETUP.md).
+test
