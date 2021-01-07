@@ -1,4 +1,4 @@
-docker run -p 80:80 -d "$USER"/node-docker
+docker run -p 80:80 -d "$USER"/node-docker-ecs
 
 # Get all active containers
 # docker ps
