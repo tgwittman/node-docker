@@ -1,14 +1,12 @@
-name: Test
+name: verify
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
 jobs:
-  build:
-    name: Test
+  verify:
+    name: verify
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,7 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: test
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}

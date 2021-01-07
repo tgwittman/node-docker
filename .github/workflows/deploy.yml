@@ -1,12 +1,30 @@
-name: Deploy
+name: deploy
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [ master ]
 
 jobs:
+  verify:
+    name: verify
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: test
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm test
+
   deploy:
-    name: Deploy
+    name: deploy
+    needs: verify
     runs-on: ubuntu-latest
 
     steps:
